@@ -1,31 +1,41 @@
 # MERN-TODO-List
 
-CRUD для задач юзеров с аутентификацией. 
-Использован стек Mongo+Express+React+Node, к React ещё custom CSS и Semantic UI React.
+___
 
-## Как это работает
-Пользователи регистрируются и логинятся.
-В главном окне (`Home`) есть список тасок и небольшая форма для создания новой таски.
-Таски показываются от всех пользователей, но редактировать и удалять можно только те, 
-которые создавал текущий активный пользователь.
-Редактирование таски происходит в отдельном маленьком модальном окне.
+[Версия на русском языке](README_ru.md)
 
-## Скрипты
-Запускать из папки с проектом:
+___
+
+CRUD for user's tasks with auth. 
+Used stack is Mongo+Express+React+Node, also custom CSS and Semantic UI React.
+
+## Work flow
+Users are registered and authorized.
+In main section (`Home`) there is list of tasks and small form for creating a new one.
+Tasks are shown for all users, but current user can edit and delete only tasks created by current user.
+Editing of task is made in the separate small modal window. 
+
+## Scripts
+Run from the project's folder:
 
 ### `npm i`
-Для установки модулей
+Install modules
 
 ### `npm run dev`
-Запускает приложение в режиме разработки по адресу [http://localhost:3000](http://localhost:3000).
+Start the app in dev mode at [http://localhost:3000](http://localhost:3000).
 
 ### `npm run build`
-Для сборки в папку `build`.
+Build project into `build` folder.
 
-## Скриншоты
-![Редактирование таски](screenshots/screenshot_edit.png?raw=true "Редактирование таски")
-![Все таски](screenshots/screenshot_home.png?raw=true "Все таски")
-![Незалогиненный пользователь](screenshots/screenshot_home_empty.png?raw=true "Незалогиненный пользователь")
-![Нет тасок](screenshots/screenshot_home_empty_logged.png?raw=true "Нет тасок")
-![Окно логина](screenshots/screenshot_log_in.png?raw=true "Окно логина")
-![Окно регистрации](screenshots/screenshot_sign_up.png?raw=true "Окно регистрации")
+## Screenshots
+![Task editing](screenshots/screenshot_edit.png?raw=true "Task editing")
+![All tasks](screenshots/screenshot_home.png?raw=true "All tasks")
+![Unauthorized user](screenshots/screenshot_home_empty.png?raw=true "Unauthorized user")
+![No tasks](screenshots/screenshot_home_empty_logged.png?raw=true "No tasks")
+![Login window](screenshots/screenshot_log_in.png?raw=true "Login window")
+![Registration window](screenshots/screenshot_sign_up.png?raw=true "Registration window")
+
+---
+
+Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from 
+<a href="https://www.flaticon.com/" title="Flaticon"> www.flaticon.com

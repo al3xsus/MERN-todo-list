@@ -1,14 +1,47 @@
 {
-  "name": "react-template",
-  "version": "0.1.0",
+  "name": "mern-todo-list",
+  "version": "1.0.0",
   "private": true,
+  "author": {
+    "name": "Alexandr Lavrentyev",
+    "email": "al3xsus@pm.me"
+  },
+  "contributors": [
+    {
+      "name": "Alexandr Lavrentyev",
+      "email": "al3xsus@pm.me"
+    }
+  ],
+  "homepage": "",
+  "license": "MIT",
+  "keywords": [
+    "spa",
+    "express",
+    "react",
+    "react-router",
+    "semantic-ui-react",
+    "MERN",
+    "mongo",
+    "mongodb",
+    "expressjs",
+    "node",
+    "nodejs",
+    "auth",
+    "todo",
+    "to-do"
+  ],
+  "description": "Simple to do list SPA app with auth",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/al3xsus/MERN-todo-list"
+  },
   "dependencies": {
-    "axios": "^0.18.0",
-    "bcrypt": "^3.0.4",
+    "axios": "^0.19.2",
+    "bcrypt": "^4.0.1",
     "bcryptjs": "^2.4.3",
     "body-parser": "^1.17.2",
-    "connect-mongo": "^2.0.3",
-    "dotenv": "^6.2.0",
+    "connect-mongo": "^3.2.0",
+    "dotenv": "^8.2.0",
     "express": "^4.15.3",
     "express-session": "^1.15.4",
     "moment": "^2.24.0",
@@ -18,21 +51,28 @@
     "passport-local": "^1.0.0",
     "react": "^16.8.3",
     "react-dom": "^16.8.3",
-    "react-router-dom": "^4.1.2",
-    "semantic-ui-react": "^0.85.0"
+    "react-router-dom": "^5.1.2",
+    "semantic-ui-react": "^0.88.2"
   },
   "devDependencies": {
-    "concurrently": "^4.1.0",
-    "react-scripts": "2.1.5"
+    "concurrently": "^5.2.0",
+    "react-scripts": "3.4.1"
   },
   "scripts": {
-    "start": "export NODE_ENV=\"production\" && node server/server.js",
     "build": "react-scripts build",
     "eject": "react-scripts eject",
     "dev": "concurrently \"react-scripts start\" \"nodemon server/server.js\"",
-    "prod": "export NODE_ENV=\"production\" && nodemon server/server.js"
+    "prod": "export NODE_ENV=\"production\" && yarn build && nodemon server/server.js"
   },
   "proxy": "http://localhost:8080",
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "engines": {
+    "node": ">= 12.14.1",
+    "npm": ">= 6.13.4",
+    "yarn": "^1.21.1"
+  },
   "browserslist": [
     ">0.2%",
     "not dead",
