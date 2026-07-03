@@ -1,31 +1,26 @@
-# MERN-TODO-List
+# ⚠️ ARCHIVED / HISTORICAL MILESTONE
 
-___
+> **Notice:** This repository is no longer actively maintained and is preserved here solely as a historical archive of early fullstack development patterns.
+
+### Why is this public?
+I maintain this project publicly as a checkpoint in my engineering timeline. It represents early hands-on implementation of the full application stack (MERN), capturing the foundational patterns of database schemas, RESTful API design, and client-server state synchronization that laid the groundwork for my modern architecture practices.
+
+---
+
+# MERN Todo List
+
+A foundational full-stack task management application implementing full CRUD (Create, Read, Update, Delete) operations across an isolated backend and frontend architecture.
+
+### Technical Foundations Demonstrated:
+* **Database Modeling:** Defining schemas and relations using MongoDB and Mongoose.
+* **REST API Routing:** Building structured routing, request parsing, and response formatting via Express and Node.js.
+* **Client-Server Communication:** Managing asynchronous HTTP requests, lifecycle events, and application UI states in React.
+
+---
 
 [Версия на русском языке](README_ru.md)
 
 ___
-
-CRUD for user's tasks with auth. 
-Used stack is Mongo+Express+React+Node, also custom CSS and Semantic UI React.
-
-## Work flow
-Users are registered and authorized.
-In main section (`Home`) there is list of tasks and small form for creating a new one.
-Tasks are shown for all users, but current user can edit and delete only tasks created by current user.
-Editing of task is made in the separate small modal window. 
-
-## Scripts
-Run from the project's folder:
-
-### `npm i`
-Install modules
-
-### `npm run dev`
-Start the app in dev mode at [http://localhost:3000](http://localhost:3000).
-
-### `npm run build`
-Build project into `build` folder.
 
 ## Screenshots
 ![Task editing](screenshots/screenshot_edit.png?raw=true "Task editing")
